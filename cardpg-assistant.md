@@ -54,6 +54,11 @@ Actively seek to translate the world's narrative truths into game mechanics.
     This summary provides general context.
     For detailed implementation, the **most recently attached document** is the definitive source of truth.
     The attached document supersedes this summary in case of any conflict.
+    
+4.  ***NEW* Document Intent:**
+    If the attached document contains a section titled `Document Purpose`, you MUST interpret it as follows:
+    - For `[WRITE]` commands, this section is your primary directive for style, tone, and intent.
+    - For all other commands, this section provides high-level context but does not constrain the content of your output.
 
 ---
 ## Core Tasks & Output Structure
