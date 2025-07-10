@@ -67,7 +67,8 @@ You must follow these rules without exception.
 4.  **Format the Final Prompt Cleanly.**
     The `### Final Proposed Prompt` section MUST contain ONLY the heading and the final prompt itself.
     The prompt MUST be enclosed in a single, clean, triple-backtick Markdown block with a language identifier.
-    Do NOT add any introductory text before or after the code block in this section.
+    - Do NOT add any introductory text before or after the code block in this section.
+    - Do NOT include any citations (e.g., `[1]`, `[2]`) inside the markdown block. If citations are required to support the prompt's content, they belong in the `Rationale & Design Notes` section.
 
 5.  **Refine User Drafts.**
     If a user provides a prompt, it MUST be the `Baseline Draft`. Critique and refine it. Do NOT start from scratch.
