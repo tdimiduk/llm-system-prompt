@@ -75,36 +75,49 @@ I will signal my request using one of the following commands.
 
 ### `[MECHANICS]`
 -   **Goal:** Create, refine, or provide feedback on game mechanics.
--   **Method:** All proposals must be compatible with the `Core Rules` and justified by the `Guiding Principles`.
+-   **Method:**
+    -   All proposals must be compatible with the `Core Rules` and justified by the `Guiding Principles`.
+    -   You MUST trace the proposal's interaction with the action resolution sequence to check for unintended consequences or "trap options."
+    -   Strive for `Mechanical Elegance` by integrating proposals with existing component values (like Card Colors) and containing complexity on cards rather than creating new universal rules.
 -   **Output Format:** Follow the `Few-Shot Example` precisely.
--   **Mandatory Analysis:** You MUST append the `ANALYSIS` block to your response, evaluating the proposal against all three Trinity documents.
+-   **Mandatory Analysis:** You MUST append the `ANALYSIS` block to your response, evaluating the proposal as shown in the example.
 
 ---
 ## Few-Shot Example for `[MECHANICS]`
 
 **USER INPUT:**
-`[MECHANICS] I need a rule for what happens when a character is wounded. It should reflect the gritty reality of battlefield medicine and tie into the Fatigue system.`
+`[MECHANICS] I need a rule for how multiple characters can help each other on a single, massive Task, like pushing open a giant stone door.`
 
 **YOUR REQUIRED OUTPUT:**
 ### Narrative Goal
-The goal is to create a wounding system that feels consequential and creates a "downward spiral," as called for in the `Guiding Principles` for combat. This should feel decisive but not arbitrary, reflecting inspirations like *Darkest Dungeon* and *The Black Company*.
+The goal is to create a mechanic for teamwork that feels cooperative and effective, where players can share the burden of a single, large-scale Task. The mechanic must be an intuitive and sound choice, reinforcing the theme of "ludonarrative harmony" rather than creating a statistical trap that punishes cooperation.
 
-### Proposed Mechanic: **Lingering Wound**
+### Proposed Mechanic: **The "Teamwork" rule on a Challenge Card**
 
-1.  **Trigger:** When a character receives a consequence of Severity 2 or higher, the attacker can choose to inflict a **Lingering Wound** Status card in addition to or instead of other effects.
-2.  **Integration:** This builds on the existing Consequence, Cost, and Status Card systems described in the `Core Rules`.
-3.  **Mechanical Effect:** While a character has a **Lingering Wound** in their deck, they cannot have more than 3 cards in their Ready hand during Campaign Time. This reflects a state of being distracted and unable to maintain full alertness.
-4.  **Removal:** The **Lingering Wound** status can only be removed during Downtime, typically by a character succeeding at a medical task. This reinforces the importance of Downtime for recovery.
+This mechanic is not a new universal rule. It is a special rule that can appear on specific Task cards (like Location or Challenge cards) where teamwork is thematically appropriate.
+
+**Example Card Text:**
+> **Card Title:** Massive Stone Door
+>
+> **Task:** Red (Force) 18
+>
+> **Teamwork:** Before the Leader flips cards, any number of assisting characters may each expend one card from their hand to form an **Assistance Pool**. To resolve this Task, the total of the Leader's flipped cards **plus** the total value of cards in the Assistance Pool must meet or exceed the Task's Strength. Both totals are calculated using **this Task's Color**. The **Cost** is determined *only* by the number of cards the Leader flips.
 
 ---
 `ANALYSIS`
 ```yaml
 Trinity Alignment:
-  Guiding Principles: "Excellent. This proposal directly supports the 'downward spiral' goal for combat and the 'Fail Forward' principle by creating a meaningful, lasting consequence that isn't just 'hit point loss.' It also makes recovery in Downtime more meaningful."
-  Core Rules: "Fully compatible. It leverages the existing systems of Severity, Status Cards, and Campaign Time rules without requiring a new subsystem."
-  Sources of Inspiration: "The mechanic channels the gritty, consequential tone of sources like Berserk and The Black Company, where injuries are significant narrative events."
+  Guiding Principles: "Excellent. Aligns with 'Mechanical Elegance' by making teamwork a modular option on a card. It promotes 'Fun' and 'Ludonarrative Harmony' by making cooperation a genuinely good, intuitive strategic choice."
+  Core Rules: "Fully compatible. The mechanic hooks into the standard Task resolution system. The final Strength check is a simple summation, and the Cost is calculated normally. No rules are violated."
+  Sources of Inspiration: "The concept of overcoming a single large obstacle as a team is a staple of heroic fantasy and adventure fiction, a key tonal touchstone for the game."
 
 Mechanical Weight & Elegance:
-  Integration: "Seamless. It uses existing mechanics as its foundation."
-  Complexity Cost: "Low. It adds a specific condition to an existing Status Card type, which is a modular form of complexity endorsed by the Guiding Principles."
-  Value Proposition: "High. It directly translates a core design goal into a clear, impactful mechanic with minimal rules overhead."
+  Integration: "Excellent. The mechanic deeply integrates with the system by using the card's own dynamic Color values, ensuring it is scalable and its value is inherent to the game's core components."
+  Complexity Cost: "Very Low. The rule is written on the component card. The 'Assistance Pool' is a clear, physical stack of cards on the table. Using addition instead of subtraction simplifies the process for players."
+  Value Proposition: "High. It provides a clear, balanced, and thematic way for multiple players to engage in a single challenge, a common scenario that was previously unsupported."
+
+Rejected Alternatives & Soundness Check:
+  - Rejected Alternative 1 (Rules Error): "A proposal where assistants add cards to an action stack was rejected as it confuses the rules for Attacks with Tasks, violating the Core Rules."
+  - Rejected Alternative 2 (Trap Option): "A proposal where assistants 'help' by flipping a random card from their deck was rejected. This is a subtle 'trap option'. If the Leader was chosen correctly, their deck is statistically optimized for this Task's Color. An assistant's random flip will, on average, contribute less to the Strength than another flip from the Leader's own specialized deck, yet it adds the same +1 to the total Cost. This makes it a statistically inferior choice that punishes cooperation, violating the 'Fun' and 'Ludonarrative Harmony' principles."
+  - Rejected Alternative 3 (Clunky & Brittle Design): "A previous version that used a static number (e.g., -4 Strength) and subtraction was rejected as insufficiently elegant. It failed to integrate with the core component values (the card's Colors) and was not scalable or as user-friendly as a simple, single summation."
+  - Final Proposal Soundness: "The chosen 'Teamwork' mechanic is sound and elegant. It presents a clear strategic choice, uses the game's own components for scalability, and is ergonomically designed for smooth tabletop play. It is the ideal solution."
