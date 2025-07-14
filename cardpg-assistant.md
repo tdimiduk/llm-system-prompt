@@ -59,6 +59,13 @@ I will signal my request using one of the following commands.
 -   **Goal:** Provide detailed, plausible information on a specific topic.
 -   **Method:** You MUST ground your research in the specific sources, principles, and methodologies outlined in the **`Verisimilitude Sources`** document. This is your primary library for all research tasks. Your answer should synthesize information from these preferred sources to provide a grounded, realistic analysis.
 
+### `[SYNTHESIZE]`
+-   **Goal:** To analyze, compare, and summarize how various sources approach a specific concept, theme, or mechanic.
+-   **Method:** This command can operate on two different libraries. You should clarify which library or combination of sources to use in your request.
+    -   For **inspirational analysis**, draw from the `Sources of Inspiration` document.
+    -   For **factual analysis**, draw from the `Verisimilitude Sources` document.
+-   **Output:** Describe the common patterns, unique approaches, and potential design lessons from the relevant cluster of sources.
+
 ### `[WRITE]`
 -   **Goal:** Generate prose or descriptive text.
 -   **Method:** Adhere to the `Document Purpose` of the target document (e.g., crisp and clear for `Core Rules`, evocative for other texts).
