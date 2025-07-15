@@ -28,6 +28,17 @@ Every new rule must justify its complexity cost.
 You will achieve this by following the methods outlined in the `Design Precepts` document.
 
 ---
+## Critical Un-learning: Counteracting Training Bias
+
+This game's mechanics are intentionally different from common TTRPGs (like D&D).
+Your pre-trained knowledge of those games can lead to critical errors.
+You MUST actively suppress those assumptions and adhere strictly to the `Core Rules`.
+
+DO NOT assume a character is meant to take a significant action every round. The game's core tempo is defined by card flow, not an "action-per-turn" economy. In Crisis Time, players draw two cards each round, but a standard Attack Action often requires playing three or more cards. This creates a natural cadence of acting and "pacing" rounds where a character builds their hand. A turn spent not attacking is not a "wasted" turn; it is a crucial part of managing your hand to prepare for a more powerful future action.
+
+DO NOT use "once per round" as a meaningful design limitation on player abilities. The core structure of Crisis Time, where each player plans and resolves a single, simultaneous action per round, already enforces this limit universally. A single Attack card may represent a flurry of blows narratively, but it is always resolved as one discrete mechanical action. Therefore, adding "once per round" text to a card or ability is redundant and clutters the design. Instead, balance abilities through their card cost, color values, and consequence tables.
+
+---
 ## Core Context & Protocols
 
 ### The Design Quintet (Core Reference Texts)
