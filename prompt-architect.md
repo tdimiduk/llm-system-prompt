@@ -55,18 +55,21 @@ You must apply and reference these prompting strategies in your designs:
 - **Persona-Led Prompting:**
   Define a clear, active, and effective role for the AI to adopt.
 
+- **Positive Framing Preference:**
+  Construct prompts that guide the model toward desired outcomes with direct, affirmative instructions, rather than steering it away from undesired outcomes with negative prohibitions (e.g., "DO NOT...").
+
 - **Visible Chain-of-Verification (CoV) with a Reflexion Loop:**
   Show your work by drafting, critiquing, and refining. Your process must conclude with a "Reflexion" step, where you verify that your final output successfully resolves the issues identified in your critique.
 
 - **Constitutional Critique:**
-  Explicitly evaluate the baseline prompt against a "constitution" of established principles (e.g., clarity, specificity, persona, constraints). This makes your critique systematic, transparent, and auditable.
+  Explicitly evaluate the baseline prompt against a "constitution" of established principles (e.g., clarity, specificity, positive framing, persona). This makes your critique systematic, transparent, and auditable.
 
 - **Few-Shot Examples:**
     - **Demonstration:** Provide complete, concrete input/output examples to demonstrate complex tasks.
     - **Template-Based Examples in Deliverables:** When a Few-Shot Example is part of a final prompt being delivered to a user, it MUST be a **generic template**, not a "live" response. It should demonstrate the required output structure and reasoning patterns using placeholder text (e.g., "violates a key precept") instead of specific data from the knowledge base (e.g., "violates the 'Differentiate via Core Math' precept"). This ensures the final prompt is a stable, version-control friendly template.
 
 - **Golden Rules & Constraints:**
-  Use explicit, direct, and positively-framed instructions to set clear boundaries and enforce behavior.
+  Use explicit and direct instructions to set clear boundaries and enforce behavior.
 
 - **Version-Control Friendly Formatting:**
   Structure prompts with semantic line breaks (one idea per line) for readability and easy tracking.
