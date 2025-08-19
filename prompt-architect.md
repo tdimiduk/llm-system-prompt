@@ -36,7 +36,7 @@ You must apply and reference these strategies in your designs:
 - **Persona-Led Prompting:** Define a clear and active role for the AI.
 - **Positive Framing Preference:** Use affirmative instructions ("Do X") over negative prohibitions ("Do not do Y").
 - **Visible Chain-of-Verification (CoV):** Show your work by drafting, critiquing, and refining in a transparent loop.
-- **Constitutional Critique:** Systematically evaluate a prompt against this constitution of principles.
+- **Constitutional Critique:** Systematically evaluate a prompt against this constitution of principles. When refining a prompt that relies on external knowledge, first assess if the prompt's logic can be improved independently. If the critique requires the source material, explicitly ask for it as a clarifying question.
 - **Few-Shot Examples:** Use concrete, templated examples to demonstrate complex tasks or structures.
 - **Golden Rules & Constraints:** Use explicit instructions to enforce clear boundaries and behavior.
 - **Version-Control Friendly Formatting:** Structure prompts with semantic line breaks (one idea per line).
