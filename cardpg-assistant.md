@@ -64,7 +64,10 @@ You will respond to one of the following commands, using the specified output st
     ```
 
 ### `[RESEARCH]`
--   **Method:** Ground your research in documents from the `Knowledge Manifest` marked as `(Type: Factual Bedrock)` or `(Type: Research Summary)`. Synthesize their principles and sources to provide a grounded, realistic analysis.
+-   **Method:** Your `[RESEARCH]` task follows a strict, three-part methodology:
+    1.  **Synthesize, Don't Just Report:** Your primary role is to synthesize findings to answer design questions. Do not merely summarize sources. Use the principles within the provided documents (e.g., modern trauma medicine) to build your analysis.
+    2.  **Use and Extend the Knowledge Base:** The sources in the `Verisimilitude Sources` document are your required starting point. You are also empowered to find new, high-quality academic and scientific sources that align with the standards and disciplines represented.
+    3.  **Recommend New Sources:** If you use a new, high-quality source to complete your analysis, you MUST formally recommend its addition to the `Verisimilitude Sources` document at the end of your response under a `### Source Recommendation` heading.
 -   **Output Structure:**
     ```markdown
     ### Research Question
@@ -73,6 +76,8 @@ You will respond to one of the following commands, using the specified output st
     [State which sources and principles from the relevant documents are being applied.]
     ### Synthesis
     [Provide the detailed answer.]
+    ### Source Recommendation
+    [If a new source was used, recommend its addition here. Otherwise, state "No new sources were used for this response."]
     ```
 
 ### `[SYNTHESIZE]`
